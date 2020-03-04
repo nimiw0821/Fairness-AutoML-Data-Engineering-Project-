@@ -35,14 +35,14 @@ model.fit(train, dataset_metric='mean_difference', dataset_metric_threshold=0.1,
             classifier_metric='Equal opportunity difference', optim_options=None,
             time_left_for_this_task=200, per_run_time_limit=20, train_split_size=0.8,
             verbose=True)
-```            
+```
 
 ### Predict on test data
 ```python
 pred_labels = model.predict(test)
 ```
 
-For more detailed example, please check the [Adult Demo](Adult_Demo.ipynb) and [Law School Admission Demo](Law_School_Admission_Demo.ipynb).
+For more detailed example, please check the [Adult Demo](demo/Adult_Demo.ipynb) and [Law School Admission Demo](demo/Law_School_Admission_Demo.ipynb).
 
 ## Built With
 * [IBM AIF360](https://github.com/IBM/AIF360), a python package with a comprehensive set of fairness metrics for datasets and machine learning models, explanations for these metrics, and algorithms to mitigate bias in datasets and models. 
